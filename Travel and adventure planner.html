@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅行計畫員</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>旅行計畫員 - 地圖與翻譯</h1>
+
+    <!-- 地圖容器 -->
+    <div id="map"></div>
+
+    <!-- 翻譯功能 -->
+    <div class="translate-container">
+        <textarea id="textInput" placeholder="輸入要翻譯的文字"></textarea>
+        <button onclick="translateText()">翻譯</button>
+        <p id="translationResult"></p>
+    </div>
+
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4SMgk-OuH1RHf3xidSDKg6Ar8UT2hJsI&callback=initMap"></script>
+</body>
+</html>
